@@ -1,0 +1,42 @@
+### Criar um novo aluno
+POST http://localhost:8080/aluno
+Content-Type: application/json
+
+{
+  "matricula": 2022004387,
+  "nome": "Nelson Thiago",
+  "idade": 20,
+  "email": "2022004387@ifam.edu.br"
+}
+
+### Criar um novo aluno
+POST http://localhost:8080/aluno
+Content-Type: application/json
+
+{
+  "matricula": 2022004385,
+  "nome": "Sabrina Frazao",
+  "idade": 20,
+  "email": "2022004385@ifam.edu.br"
+}
+
+
+### Obter todos os alunos
+GET http://localhost:8080/aluno/list
+
+
+### Obter um alunos por ID
+GET http://localhost:8080/aluno/2022004387
+
+### Atualizar um aluno
+PUT http://localhost:8080/aluno/2022004387
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "idade": 21,
+  "email": "joao.silva@example.com"
+}
+
+### Excluir um aluno
+DELETE http://localhost:8080/aluno/2022004385
